@@ -10,3 +10,7 @@ Started to learn web development. Tryed different field of programming and choos
 * SQL - Basic
 * GIT - Basic
 * English - Medium
+### Education and courses
+
+* Udemy - [Web development bootcamp](https://www.udemy.com/course/the-complete-web-development-bootcamp/learn/lecture/12384816)
+* RSSchool - [Web development course](https://rs.school/)
