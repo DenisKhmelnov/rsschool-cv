@@ -1,40 +1,205 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <title>CV Khmelnov</title>
+    <!--Bootstrap-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
+  
+    
+    <!--Stylesheet and fonts-->
     <link rel="stylesheet" href="style.css">
-    <title>CV</title>
-</head>
-<body>
-    <h1>Denis Khmelnov</h1>
-    <h3><em>Frontend developer</em></h3>
-
-    <ul>
-        <li class="contact_list"><h6>Phone: +79818009737</h6></li>
-        <li class="contact_list"><h6>Email: hmelnov@live.ru</h6></li>
-        <li class="contact_list"><a href="https://github.com/DenisKhmelnov"><h6>GitHub</h6></a></li>
-    </ul>
-
-    <h2>About myself</h2>
-
-    <p>
-      I've started to learn computer science two years ago as a hobby. Since that time I've learned and tried a lot
-      from databases to different programming languages like Java, C#, Python and Java Scrypt.
-    </p>
-    <p>
-      Right now my goal is to systemize all my knowledge about Web development and create a portfolio to apply for 
-      a job.
-    </p>
-
-    <h2>Skills</h2>
-    <ul>
-      <li>HTML - Basic</li>
-      <li>CSS - Basic</li>
-      <li>JavaScript - Basic</li>
-      <li>GIT - Basic</li>
-      <li>English - Intermediate</li>
-      <li>My projects - <a href="https://github.com/DenisKhmelnov">GitHub</a></li>
-    </ul>
-</body>
-</html>
+    <link rel="icon" href="images/favicon.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather&family=Montserrat:wght@300&family=Sacramento&display=swap" rel="stylesheet">
+    
+    <!-- Highlight JavaScript -->
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.2.0/styles/rainbow.min.css">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.2.0/highlight.min.js"></script>
+    <script>hljs.highlightAll();</script>
+  
+    <!-- Fonts awesome -->
+    <script src="https://kit.fontawesome.com/6a3b97ed69.js" crossorigin="anonymous"></script>
+  
+    <!-- Self estimation script -->
+    <script src="scripts/self.js"></script>
+  </head>
+  
+  <body>
+  
+    <!--Navigation bar-->
+    <aside>
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="#bio">About myself</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#education">Education</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#skills">Skills</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#code">Code example</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#projects">My projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#languages">Languages</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </aside>
+    
+  
+    <!--Central container-->
+    <div class="wrapper">
+      <div class="flex-container">
+        <div class="left-container">
+          <header class="center">
+              <figure>
+                <img class="avatar" src="images/Avatar.jpg" alt="My photo">
+              </figure>
+              <h1>Denis Khmelnov</h1>
+              <h3><em>Frontend developer</em></h3>
+          </header>
+            <h4>Contacts</h4>
+            <ul>
+              <li class="contact_list"><i class="fas fa-phone-square"></i><h6>Phone: +79818009737</h6></li>
+              <li class="contact_list"><i class="fas fa-envelope"></i><h6>Email: hmelnov@live.ru</h6></li>
+              <li class="contact_list"><i class="fab fa-github-square"></i><a href="https://github.com/DenisKhmelnov"><h6>GitHub</h6></a></li>
+            </ul>
+            <figure>
+              <a href="https://rs.school/"><img class="logo" src="images/rs_school_js.svg" alt="RS Logo"></a>
+            </figure>
+        </div>
+        <!--Right container-->
+        <div class="right-container">
+          <main>
+            <article id="bio">
+              <h2>About myself</h2>
+  
+              <p>
+                I've started to learn computer science two years ago as a hobby. Since that time I've learned and tried a lot
+                from databases to different programming languages like Java, C#, Python and Java Scrypt.
+              </p>
+              <p>
+                Right now my goal is to systemize all my knowledge about Web development and create a portfolio to apply for 
+                a job.
+              </p>
+            </article>
+            <section id="education">
+              <h2>Education</h2>
+              <ul>
+                <li>Udemy - <a href="https://www.udemy.com/course/the-complete-web-development-bootcamp/learn/lecture/12384816">Web development bootcamp</a></li>
+                <li>RS School - <a href="https://rs.school/">Web development course</a></li>
+              </ul>
+            </section>
+    
+            <section id="skills">
+              <h2>Skills</h2>
+              <ul>
+                <li>HTML - Basic</li>
+                <li>CSS - Basic</li>
+                <li>JavaScript - Basic</li>
+                <li>GIT - Basic</li>
+                <li>English - Intermediate</li>
+                <li>My projects - <a href="https://github.com/DenisKhmelnov">GitHub</a></li>
+              </ul>
+            </section>
+    
+            <section id="code">
+              <h2>Code example</h2>
+              <p>Example of work with API to use weather forecast data from external server.</p>
+              <pre class = "code_example">
+                <code class="js">
+    const express = require("express");
+    const https = require("https");
+    const bodyParser = require("body-parser");
+    const app = express();
+    
+    app.use(bodyParser.urlencoded({extended: true}));
+    
+    app.get("/", function(req,res){
+      res.sendFile(__dirname + "/index.html");
+    })
+    
+    app.post("/", function(req, res){
+      const query = req.body.cityName;
+      const appid = "afff77eca408a47a1fb36415e8ed30c5";
+      const unit = "metric";
+      const url = "https://api.openweathermap.org/data/2.5/weather?q="
+                  + query +"&appid="+appid+"&units="+unit;
+    
+      https.get(url, function(response){
+        console.log(response);
+    
+        response.on("data", function(data){
+          const weaterData = JSON.parse(data);
+          const temp = weaterData.main.temp;
+          const currentWeather = weaterData.weather[0].description;
+          const icon = weaterData.weather[0].icon;
+          const imageURL = "http://openweathermap.org/img/wn/"+ icon + "@2x.png";
+          res.write(">This is a temperature in "+query+": "+ temp");
+          res.write("The weather condition is: " + currentWeather);
+        })
+      })
+    })
+    
+                </code>
+              </pre>
+            </section>
+    
+            <section id="projects">
+              <h2>My projects</h2>
+              <div id="projects-carousel" class="carousel carousel-dark slide" data-ride="false">
+                <div class="carousel-inner">
+                  <div class="carousel-item active container-fluid">
+                    <h5>Tindog</h5>
+                    <p>School project of dogs dating site using HTML, CSS and Bootstrap</p>
+                    <a href="https://deniskhmelnov.github.io/Tin-Dog/" target="_blank">
+                      <img class="projects-image" src="images/tin-dog.png" alt="Tindog">
+                    </a>
+                  </div>
+                  <div class="carousel-item container-fluid">
+                    <h5>Drum Kit</h5>
+                    <p>School project of drum play website using HTML and CSS and JavaScript</p>
+                    <a href="https://deniskhmelnov.github.io/Drum-Kit/" target="_blank">
+                      <img class="projects-image" src="images/drum-kit.png" alt="Drum Kit">
+                    </a>
+                  </div>
+                </div>
+                <a class="carousel-control-prev" href="#projects-carousel" role="button" data-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                </a>
+                <a class="carousel-control-next" href="#projects-carousel" role="button" data-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                </a>
+              </div>
+            </section>
+            <section id="languages">
+              <h2>Languages</h2>
+              <ul>
+                <li>English - Intermediate</li>
+                <li>Russian - Native</li>
+              </ul>
+            </section>
+          </main>
+          
+        </div>
+      </div>
+      
+    </div>
+  
+  </body>
+  
+  </html>
+  
